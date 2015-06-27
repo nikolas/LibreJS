@@ -19,14 +19,14 @@ LibreJS
 
 Appendix A Installation Requirements
   A.1 Mozilla Browser
-  A.2 Mozilla's Add-on SDK
+  A.2 Mozilla's Jetpack Manager for Node.js
 Appendix B LibreJS Internals
 Appendix C Tests
 Appendix D GNU Free Documentation License
 LibreJS
 *******
 
-This manual is for GNU LibreJS (version 6.0.9, 16 June 2015).
+This manual is for GNU LibreJS (version 6.0.10.20150620, 20 June 2015).
 
 1 Overview
 **********
@@ -66,8 +66,8 @@ or by building it from source.
 3.1 Building the Package
 ========================
 
-After enabling the Add-on SDK, you should be able to use the 'make'
-command to build LibreJS from source.
+After installing 'jpm', you should be able to use the 'make' command to
+build LibreJS from source.
 
    After running 'make', a new file, 'librejs.xpi' should be generated.
 This is the file that can be installed in a Mozilla browser.
@@ -313,31 +313,31 @@ and label it accordingly.
           'magnet:?xt=urn:btih:87f119ba0b429ba17a44b4bffcab33165ebdacc0&dn=freebsd.txt'
 
    * GNU General Public License (GPL) version 2
-        * Identifier: 'GNU-GPL-2.0'
+        * Identifier: 'GPL-2.0'
         * URL: <http://www.gnu.org/licenses/gpl-2.0.html>
         * Magnet link:
           'magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&dn=gpl-2.0.txt'
 
    * GNU General Public License (GPL) version 3
-        * Identifier: 'GNU-GPL-3.0'
+        * Identifier: 'GPL-3.0'
         * URL: <http://www.gnu.org/licenses/gpl-3.0.html>
         * Magnet link:
           'magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt'
 
    * GNU Lesser General Public License, version 2.1
-        * Identifier: 'GNU-LGPL-2.1'
+        * Identifier: 'LGPL-2.1'
         * URL: <http://www.gnu.org/licenses/lgpl-2.1.html>
         * Magnet link:
           'magnet:?xt=urn:btih:5de60da917303dbfad4f93fb1b985ced5a89eac2&dn=lgpl-2.1.txt'
 
    * GNU Lesser General Public License, version 3
-        * Identifier: 'GNU-LGPL-3.0'
+        * Identifier: 'LGPL-3.0'
         * URL: <http://www.gnu.org/licenses/lgpl-3.0.html>
         * Magnet link:
           'magnet:?xt=urn:btih:0ef1b8170b3b615170ff270def6427c317705f85&dn=lgpl-3.0.txt'
 
    * GNU Affero General Public License, version 3
-        * Identifier: 'GNU-AGPL-3.0'
+        * Identifier: 'AGPL-3.0'
         * URL: <http://www.gnu.org/licenses/agpl-3.0.html>
         * Magnet link:
           'magnet:?xt=urn:btih:0b31508aeb0634b347b8270c7bee4d411b5d4109&dn=agpl-3.0.txt'
@@ -490,7 +490,7 @@ Labels table, like this:
         <td><a href="all.min.js">all.min.js</a></td>
         <td>
             <a href="http://www.gnu.org/licenses/gpl-3.0.html"
-                >GNU-GPL-3.0-or-later</a>
+                >GPL-3.0+</a>
             <br />
             <a href="http://www.apache.org/licenses/LICENSE-2.0"
                 >Apache-2.0</a>
@@ -563,40 +563,26 @@ LibreJS has been tested extensively on multiple GNU/Linux distributions,
 but it is compatible any operating system as long as you're using a
 compatible Mozilla browser.
 
-A.2 Mozilla's Add-on SDK
-========================
+A.2 Mozilla's Jetpack Manager for Node.js
+=========================================
 
-LibreJS uses the Mozilla Add-on SDK (Software Development Kit), a set of
-APIs and tools to create add-ons for Mozilla browsers.
+LibreJS uses the Mozilla 'jpm' tool, a set of utilities for creating,
+testing, running and packaging Mozilla Jetpack Addons.
 
-   You do not need the Add-on SDK to use LibreJS xpi file or to install
-it using the packaged version, but it is required in order to package
-the LibreJS source code into an xpi file using 'make'.  If you would
-like to run the tests for LibreJS or make changes to the source files,
-you will need the Add-on SDK as well.  For the "make" command to work
-properly, you must have the 'cfx' command available on your system from
-the command line.
+   You do not need 'jpm' to use the LibreJS xpi file or to install it
+using the packaged version, but it is required in order to package the
+LibreJS source code into an xpi file.  If you would like to run the
+tests for LibreJS or make changes to the source files, you will need
+'jpm' as well.  For the "make" command to work properly, you must have
+the 'jpm' command available on your system from the command line.
 
-   The latest tarball for the Add-on SDK is available at:
+   You can find information on getting 'jpm' at these links:
 
-   <https://ftp.mozilla.org/pub/mozilla.org/labs/jetpack/jetpack-sdk-latest.tar.gz>
+   <https://www.npmjs.com/package/jpm>
 
-   Instructions on how to get it working are available here:
+   <https://developer.mozilla.org/en-US/Add-ons/SDK/Tutorials/Getting_Started_%28jpm%29>
 
-   <https://addons.mozilla.org/en-US/developers/docs/sdk/latest/dev-guide/tutorials/installation.html>
-
-   In order to use 'make' with LibreJS source, however, it is ideal to
-have 'cfx' available at all times and for all users.
-
-   An easy way to do this is to extract the contents of the tarball and
-to place the files inside '/usr/lib/addon-sdk' and then creating a
-symbolic link in '/usr/bin', as follows:
-
-     sudo ln -s /usr/lib/addon-sdk/bin/cfx /usr/bin/cfx
-
-   The 'cfx' command will then be available to all users.
-
-   The Add-on SDK is released under the Mozilla Public License 2.0.
+   JPM is released under the Mozilla Public License 2.0.
 
 Appendix B LibreJS Internals
 ****************************

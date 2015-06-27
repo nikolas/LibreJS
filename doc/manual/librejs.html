@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<!-- This manual is for GNU LibreJS (version 6.0.9, 16 June 2015),
+<!-- This manual is for GNU LibreJS (version 6.0.10.20150620, 20 June 2015),
 a GNU IceCat extension to detect and block nonfree nontrivial
 JavaScript on webpages.
 
@@ -14,10 +14,10 @@ Texts.  A copy of the license is included in the section entitled
 "GNU Free Documentation License". -->
 <!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
 <head>
-<title>GNU LibreJS 6.0.9</title>
+<title>GNU LibreJS 6.0.10.20150620</title>
 
-<meta name="description" content="GNU LibreJS 6.0.9">
-<meta name="keywords" content="GNU LibreJS 6.0.9">
+<meta name="description" content="GNU LibreJS 6.0.10.20150620">
+<meta name="keywords" content="GNU LibreJS 6.0.10.20150620">
 <meta name="resource-type" content="document">
 <meta name="distribution" content="global">
 <meta name="Generator" content="makeinfo">
@@ -58,7 +58,7 @@ ul.no-bullet {list-style: none}
 </head>
 
 <body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
-<h1 class="settitle" align="center">GNU LibreJS 6.0.9</h1>
+<h1 class="settitle" align="center">GNU LibreJS 6.0.10.20150620</h1>
 
 
 
@@ -101,7 +101,7 @@ ul.no-bullet {list-style: none}
   <li><a name="toc-Installation-Requirements-1" href="#Installation-Requirements">Appendix A Installation Requirements</a>
   <ul class="no-bullet">
     <li><a name="toc-Mozilla-Browser" href="#Mozilla-Browser">A.1 Mozilla Browser</a></li>
-    <li><a name="toc-Mozilla_0027s-Add_002don-SDK" href="#Mozilla_0027s-Add_002don-SDK">A.2 Mozilla&rsquo;s Add-on SDK</a></li>
+    <li><a name="toc-Mozilla_0027s-Jetpack-Manager-for-Node_002ejs" href="#Mozilla_0027s-Jetpack-Manager-for-Node_002ejs">A.2 Mozilla&rsquo;s Jetpack Manager for Node.js</a></li>
   </ul></li>
   <li><a name="toc-LibreJS-Internals-1" href="#LibreJS-Internals">Appendix B LibreJS Internals</a></li>
   <li><a name="toc-Tests-1" href="#Tests">Appendix C Tests</a></li>
@@ -118,7 +118,7 @@ Next: <a href="#Overview" accesskey="n" rel="next">Overview</a>, Up: <a href="di
 </div>
 <a name="LibreJS"></a>
 <h1 class="top">LibreJS</h1>
-<p>This manual is for GNU LibreJS (version 6.0.9, 16 June 2015).
+<p>This manual is for GNU LibreJS (version 6.0.10.20150620, 20 June 2015).
 </p>
 <table class="menu" border="0" cellspacing="0">
 <tr><td align="left" valign="top">&bull; <a href="#Overview" accesskey="1">Overview</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">General purpose and information.
@@ -209,7 +209,7 @@ file, or by building it from source.
 
 <a name="Building-the-Package"></a>
 <h3 class="section">3.1 Building the Package</h3>
-<p>After enabling the Add-on SDK, you should be able to use the <code>make</code>
+<p>After installing <code>jpm</code>, you should be able to use the <code>make</code>
 command to build LibreJS from source.
 </p>
 <p>After running <code>make</code>, a new file, <samp>librejs.xpi</samp> should be
@@ -506,35 +506,35 @@ it accordingly.
 
 </li><li> GNU General Public License (GPL) version 2
 <ul>
-<li> Identifier: &lsquo;<samp>GNU-GPL-2.0</samp>&rsquo;
+<li> Identifier: &lsquo;<samp>GPL-2.0</samp>&rsquo;
 </li><li> URL: <a href="http://www.gnu.org/licenses/gpl-2.0.html">http://www.gnu.org/licenses/gpl-2.0.html</a>
 </li><li> Magnet link: &lsquo;<code>magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt</code>&rsquo;
 </li></ul>
 
 </li><li> GNU General Public License (GPL) version 3
 <ul>
-<li> Identifier: &lsquo;<samp>GNU-GPL-3.0</samp>&rsquo;
+<li> Identifier: &lsquo;<samp>GPL-3.0</samp>&rsquo;
 </li><li> URL: <a href="http://www.gnu.org/licenses/gpl-3.0.html">http://www.gnu.org/licenses/gpl-3.0.html</a>
 </li><li> Magnet link: &lsquo;<code>magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt</code>&rsquo;
 </li></ul>
 
 </li><li> GNU Lesser General Public License, version 2.1
 <ul>
-<li> Identifier: &lsquo;<samp>GNU-LGPL-2.1</samp>&rsquo;
+<li> Identifier: &lsquo;<samp>LGPL-2.1</samp>&rsquo;
 </li><li> URL: <a href="http://www.gnu.org/licenses/lgpl-2.1.html">http://www.gnu.org/licenses/lgpl-2.1.html</a>
 </li><li> Magnet link: &lsquo;<code>magnet:?xt=urn:btih:5de60da917303dbfad4f93fb1b985ced5a89eac2&amp;dn=lgpl-2.1.txt</code>&rsquo;
 </li></ul>
 
 </li><li> GNU Lesser General Public License, version 3
 <ul>
-<li> Identifier: &lsquo;<samp>GNU-LGPL-3.0</samp>&rsquo;
+<li> Identifier: &lsquo;<samp>LGPL-3.0</samp>&rsquo;
 </li><li> URL: <a href="http://www.gnu.org/licenses/lgpl-3.0.html">http://www.gnu.org/licenses/lgpl-3.0.html</a>
 </li><li> Magnet link: &lsquo;<code>magnet:?xt=urn:btih:0ef1b8170b3b615170ff270def6427c317705f85&amp;dn=lgpl-3.0.txt</code>&rsquo;
 </li></ul>
 
 </li><li> GNU Affero General Public License, version 3
 <ul>
-<li> Identifier: &lsquo;<samp>GNU-AGPL-3.0</samp>&rsquo;
+<li> Identifier: &lsquo;<samp>AGPL-3.0</samp>&rsquo;
 </li><li> URL: <a href="http://www.gnu.org/licenses/agpl-3.0.html">http://www.gnu.org/licenses/agpl-3.0.html</a>
 </li><li> Magnet link: &lsquo;<code>magnet:?xt=urn:btih:0b31508aeb0634b347b8270c7bee4d411b5d4109&amp;dn=agpl-3.0.txt</code>&rsquo;
 </li></ul>
@@ -709,7 +709,7 @@ table, like this:
         &lt;td&gt;&lt;a href=&quot;all.min.js&quot;&gt;all.min.js&lt;/a&gt;&lt;/td&gt;
         &lt;td&gt;
             &lt;a href=&quot;http://www.gnu.org/licenses/gpl-3.0.html&quot;
-                &gt;GNU-GPL-3.0-or-later&lt;/a&gt;
+                &gt;GPL-3.0+&lt;/a&gt;
             &lt;br /&gt;
             &lt;a href=&quot;http://www.apache.org/licenses/LICENSE-2.0&quot;
                 &gt;Apache-2.0&lt;/a&gt;
@@ -788,41 +788,26 @@ LibreJS has been tested extensively on multiple GNU/Linux distributions,
 but it is compatible any operating system as long as you&rsquo;re using a
 compatible Mozilla browser.
 </p>
-<a name="Mozilla_0027s-Add_002don-SDK"></a>
-<h3 class="appendixsec">A.2 Mozilla&rsquo;s Add-on SDK</h3>
-<p>LibreJS uses the Mozilla Add-on SDK (Software Development Kit), a
-set of APIs and tools to create add-ons for Mozilla browsers.
+<a name="Mozilla_0027s-Jetpack-Manager-for-Node_002ejs"></a>
+<h3 class="appendixsec">A.2 Mozilla&rsquo;s Jetpack Manager for Node.js</h3>
+<p>LibreJS uses the Mozilla <code>jpm</code> tool, a set of utilities for
+creating, testing, running and packaging Mozilla Jetpack Addons.
 </p>
-<p>You do not need the Add-on SDK to use LibreJS xpi file or to install it
+<p>You do not need <code>jpm</code> to use the LibreJS xpi file or to install it
 using the packaged version, but it is required in order to package the
-LibreJS source code into an xpi file using <code>make</code>. If you would like
-to run the tests for LibreJS or make changes to the source files, you
-will need the Add-on SDK as well. For the &ldquo;make&rdquo; command to work
-properly, you must have the <code>cfx</code> command available on your system
+LibreJS source code into an xpi file. If you would like to run the
+tests for LibreJS or make changes to the source files, you
+will need <code>jpm</code> as well. For the &ldquo;make&rdquo; command to work
+properly, you must have the <code>jpm</code> command available on your system
 from the command line.
 </p>
-<p>The latest tarball for the Add-on SDK is available at:
+<p>You can find information on getting <code>jpm</code> at these links:
 </p>
-<p><a href="https://ftp.mozilla.org/pub/mozilla.org/labs/jetpack/jetpack-sdk-latest.tar.gz">https://ftp.mozilla.org/pub/mozilla.org/labs/jetpack/jetpack-sdk-latest.tar.gz</a>
+<p><a href="https://www.npmjs.com/package/jpm">https://www.npmjs.com/package/jpm</a>
 </p>
-<p>Instructions on how to get it working are available here:
+<p><a href="https://developer.mozilla.org/en-US/Add-ons/SDK/Tutorials/Getting_Started_%28jpm%29">https://developer.mozilla.org/en-US/Add-ons/SDK/Tutorials/Getting_Started_%28jpm%29</a>
 </p>
-<p><a href="https://addons.mozilla.org/en-US/developers/docs/sdk/latest/dev-guide/tutorials/installation.html">https://addons.mozilla.org/en-US/developers/docs/sdk/latest/dev-guide/tutorials/installation.html</a>
-</p>
-<p>In order to use <code>make</code> with LibreJS source, however, it is ideal to
-have <code>cfx</code> available at all times and for all users.
-</p>
-<p>An easy way to do this is to extract the contents of the tarball and to
-place the files inside <samp>/usr/lib/addon-sdk</samp> and then creating a
-symbolic link in <samp>/usr/bin</samp>, as follows:
-</p>
-<div class="example">
-<pre class="example">sudo ln -s /usr/lib/addon-sdk/bin/cfx /usr/bin/cfx
-</pre></div>
-
-<p>The <code>cfx</code> command will then be available to all users.
-</p>
-<p>The Add-on SDK is released under the Mozilla Public License 2.0.
+<p>JPM is released under the Mozilla Public License 2.0.
 </p>
 <hr>
 <a name="LibreJS-Internals"></a>
