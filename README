@@ -29,9 +29,18 @@ console.debug() statements.
 * Export a tarball:
     git archive --format=tar.gz --prefix=librejs-6.0.4/ 6.0.4 >librejs-6.0.4.tar.gz
     mv librejs-6.0.4.tar.gz ~/releases/librejs/6.0.4/
-* Make xpi file: jpm xpi; mv librejs.xpi librejs-6.0.4.xpi
-* Upload xpi file to AMO. Use signed xpi from AMO for gnu servers,
-  e.g.: gnu_librejs-6.0.11-fx.xpi
+* Make xpi file: jpm xpi
+* Upload this xpi file to AMO.
+* In package.json, change "name" to "librejs-prerelease", and remove
+  the "id" attribute (so AMO doesn't recognize this as the listed
+  add-on when we make our own signed xpi file for self-distribution).
+* Run the `jpm sign --api-key KEY --api-secret SECRET` command. You can
+  get the key and secret strings here:
+  https://addons.mozilla.org/en-US/developers/addon/api/key/
+  This will create a signed xpi and upload it to AMO as an "unlisted"
+  extension. Then you'll find a gnu_librejs-x.x.x-fx.xpi file in the
+  current directory. Upload this file to the gnu servers -- FF 43+
+  will allow it to be installed.
 * Upload to gnu servers, update gnu.org/s/librejs links
 * Make announcement on info-gnu and savannah.gnu.org
 * Update #librejs topic
