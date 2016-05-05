@@ -1,3 +1,7 @@
+2016-05-05 Nik Nyby <nikolas@gnu.org>
+	* Removed inactive remnants of the LibreJS "Dry Run" feature
+	that was causing a problem (savannah bug #47664)
+
 2016-05-04 Nik Nyby <nikolas@gnu.org>
 	* Added Unlicense to the list of recognized licenses. Thanks
 	to Adam Plaice for the patch.
