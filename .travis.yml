@@ -9,4 +9,4 @@ before_script:
 script:
   - npm i jpm
   - npm i
-  - jpm test
+  - jpm test -b `which firefox`
