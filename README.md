@@ -1,3 +1,9 @@
+### Deprecated
+This is an old version of LibreJS. You can get the current
+one here: https://git.savannah.gnu.org/cgit/librejs.git/
+
+---
+
 GNU LibreJS --an add-on for GNU IceCat and Mozilla Firefox-- detects and
 blocks nonfree nontrivial JavaScript while allowing its execution on
 pages containing code that is either trivial and/or free.
