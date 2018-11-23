@@ -5,20 +5,20 @@ pages containing code that is either trivial and/or free.
 
 Notes on working with the code
 -------------------------------
-## Running the addon ##
+## Running the addon
 Download jpm, then do something like this in the LibreJS
 directory:
 
     jpm run -b `which abrowser`
 
-## Debugging ##
+## Debugging
 Uncomment lines 22 and 23 in lib/main.js to enable printing of
 console.debug() statements.
 
 ## Adding new whitelisted libraries ##
 * Edit data/script_libraries/script-libraries.json
 
-## Releasing a new version ##
+## Releasing a new version
 * Update version number in:
 ** configure.ac
 ** package.json
